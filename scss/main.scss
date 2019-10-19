@@ -1,0 +1,136 @@
+@import "config";
+@import "utilities";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "oswald", sans-serrif;
+}
+body {
+  background-color: #e4e4e4;
+}
+
+// Navbar and Title
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 2.9rem;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  background-color: $main-color;
+  & #header-wrap {
+    display: flex;
+    justify-content: space-between;
+
+    #title-main {
+      font-size: 2rem;
+    }
+    #header-nav {
+      list-style: none;
+      display: flex;
+      align-content: center;
+      text-align: center;
+      justify-content: center;
+
+      & li {
+        padding: 0rem 1rem 1rem 1rem;
+
+        & a {
+          font-size: 2rem;
+          text-decoration: none;
+          color: #ffffff;
+        }
+        .not-current:hover {
+          transition: 0.4s all ease;
+          border-bottom: coral 5px solid;
+        }
+      }
+    }
+  }
+}
+// Typewriter and Image
+#showcase {
+  & #showcase-wrap {
+    width: 100%;
+    height: 96vh;
+    overflow: hidden;
+    background: url("../img/header-background.jpg") no-repeat center
+      center/cover;
+    display: flex;
+    flex-direction: column;
+    #showcase-text {
+      text-align: center;
+      align-content: center;
+      align-self: center;
+      font-size: 3rem;
+      line-height: 1.5;
+      color: $main-color;
+      max-width: 60%;
+    }
+
+    #showcase-subtext {
+      position: absolute;
+      align-content: center;
+      justify-content: center;
+      text-align: center;
+      top: 50vh;
+      left: 45%;
+    }
+  }
+  & img {
+    width: 100%;
+  }
+  &-border {
+    padding-top: 0.5rem;
+    width: 90%;
+    align-self: center;
+    margin: auto;
+  }
+}
+
+// Blog Posts
+#home-a {
+  height: 75vh;
+  overflow: scroll;
+  margin-top: 2rem;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  align-self: center;
+  background-color: #e4e4e4;
+
+  &-title {
+    h1 {
+      text-align: center;
+      align-self: center;
+      font-size: 4rem;
+      color: $main-color;
+    }
+  }
+  & .post {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 1rem;
+    & .post-title {
+      padding: 2rem;
+      font-size: 2.5rem;
+    }
+  }
+}
+// Footer
+
+#main-footer {
+  height: 5vh;
+  background-color: $main-color;
+  text-align: center;
+  & p {
+    padding-top: 0.5rem;
+    color: #e4e4e4;
+  }
+}
+@import "media";

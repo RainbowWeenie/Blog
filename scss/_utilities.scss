@@ -1,0 +1,26 @@
+// Main Utilities
+
+.container {
+  max-width: 90%;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.card {
+  background-color: #ffffff;
+}
+.current {
+  border-bottom: coral 5px solid;
+  &:hover {
+    border-bottom: 5px #333 solid;
+    transition: 0.4s all ease;
+  }
+}
+.bottom-line {
+  border-bottom: coral 5px solid;
+}
+.seperator {
+  border-bottom: coral 3px solid;
+}

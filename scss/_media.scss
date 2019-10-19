@@ -1,0 +1,29 @@
+@media (max-width: 500px) {
+  header {
+    height: 15vh;
+    #header-wrap {
+      flex-direction: column;
+      #header-nav {
+        li {
+          padding: 0.5rem;
+          a {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+  #showcase-wrap {
+    #showcase-text {
+      padding-top: 10vh;
+    }
+  }
+}
+// For weird ones that won't work normally
+@media (min-width: 500px) {
+  #showcase-wrap {
+    #showcase-text {
+      padding-top: 20vh;
+    }
+  }
+}
